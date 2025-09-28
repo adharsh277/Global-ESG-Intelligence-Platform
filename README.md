@@ -131,7 +131,9 @@ DataBricks Diagram
 ![DataBricks Diagram](assets/databricks4.png)
 
 
-Water Consumption Reduction
+AI Prediction
+![AI Prediction Diagram](assets/predictnumberr.png)
+
 
 Renewable Energy Mix
 
