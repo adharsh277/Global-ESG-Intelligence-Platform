@@ -1,42 +1,32 @@
-name: ESG Prediction CI/CD
+name: Run ESG Model
 
-# Trigger on push to main or pull requests
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
+  workflow_dispatch:
 
 jobs:
-  run-notebook:
+  run-model:
     runs-on: ubuntu-latest
 
     steps:
-    # Step 1: Checkout the repo
-    - name: Checkout repo
-      uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-    # Step 2: Set up Python
-    - name: Set up Python 3.11
-      uses: actions/setup-python@v4
-      with:
-        python-version: 3.11
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
 
-    # Step 3: Upgrade pip and install dependencies
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r ./requirements.txt
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-    # Step 4: Execute the notebook
-    - name: Run Notebook
-      run: |
-        pip install nbconvert
-        jupyter nbconvert --to notebook --execute ESG_Prediction.ipynb --output executed_notebook.ipynb
+      - name: Run inference script
+        run: python src/inference.py
 
-    # Step 5: Upload trained model artifact
-    - name: Upload model artifact
-      uses: actions/upload-artifact@v3
-      with:
-        name: esg-model
-        path: model.pkl   # path to your trained model file
+      - name: Upload predictions
+        uses: actions/upload-artifact@v3
+        with:
+          name: predictions
+          path: predictions.csv
