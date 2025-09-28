@@ -31,7 +31,7 @@ jobs:
       - name: Run inference
         run: python src/inference.py
 
-      # 5️⃣ Check if predictions.csv was created
+      # 5️⃣ Verify predictions.csv creation
       - name: Verify predictions
         run: |
           if [ -f predictions.csv ]; then
@@ -43,7 +43,7 @@ jobs:
 
       # 6️⃣ Upload predictions.csv as artifact
       - name: Upload predictions
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: predictions
           path: predictions.csv
