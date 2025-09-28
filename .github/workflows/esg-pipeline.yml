@@ -1,4 +1,4 @@
-name: Run ESG Model
+name: Simple CI/CD Demo
 
 on:
   push:
@@ -6,27 +6,34 @@ on:
   workflow_dispatch:
 
 jobs:
-  run-model:
+  demo:
     runs-on: ubuntu-latest
+
     steps:
+      # 1️⃣ Checkout the repo
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      # 2️⃣ Set up Python
       - name: Set up Python 3.11
         uses: actions/setup-python@v4
         with:
           python-version: "3.11"
 
+      # 3️⃣ Install dependencies
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r src/requirements.txt
+          pip install pandas numpy matplotlib seaborn scikit-learn joblib
 
-      - name: Run inference
-        run: python src/inference.py
+      # 4️⃣ Run a simple Python script
+      - name: Run demo script
+        run: |
+          echo "import pandas as pd; import numpy as np; df = pd.DataFrame(np.random.rand(5,3)); df.to_csv('output.csv', index=False)" > demo.py
+          python demo.py
 
-      - name: Upload predictions
+      # 5️⃣ Upload a CSV as artifact
+      - name: Upload output
         uses: actions/upload-artifact@v4
         with:
-          name: predictions
-          path: predictions.csv
+          n
