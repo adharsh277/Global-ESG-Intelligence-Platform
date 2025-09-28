@@ -133,6 +133,8 @@ DataBricks Diagram
 
 AI Prediction
 ![AI Prediction Diagram](assets/predictnumberr.png)
+![AI Prediction Diagram](assets/10campanies.png)
+![AI Prediction Diagram](assets/visualai.png)
 
 
 Renewable Energy Mix
