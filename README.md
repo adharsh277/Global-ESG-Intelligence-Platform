@@ -126,9 +126,6 @@ Language	Python
 
 DataBricks Diagram
 ![DataBricks Diagram](assets/databricks1.png)
-![DataBricksrow Diagram](assets/databricks2.png)
-![DataBrickstable Diagram](assets/databricks3.png)
-![DataBricksarrow Diagram](assets/databricks4.png)
 
 
 Water Consumption Reduction
