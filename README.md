@@ -125,6 +125,7 @@ Language	Python
 ## 📊 Example Dashboards
 
 Carbon Footprint Tracker
+![DataBricks Diagram](assets/databricks1.png)
 
 Water Consumption Reduction
 
