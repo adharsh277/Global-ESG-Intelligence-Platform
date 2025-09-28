@@ -31,7 +31,17 @@ jobs:
       - name: Run inference
         run: python src/inference.py
 
-      # 5️⃣ Upload predictions.csv as artifact
+      # 5️⃣ Check if predictions.csv was created
+      - name: Verify predictions
+        run: |
+          if [ -f predictions.csv ]; then
+            echo "predictions.csv created successfully!"
+          else
+            echo "ERROR: predictions.csv not found!"
+            exit 1
+          fi
+
+      # 6️⃣ Upload predictions.csv as artifact
       - name: Upload predictions
         uses: actions/upload-artifact@v3
         with:
