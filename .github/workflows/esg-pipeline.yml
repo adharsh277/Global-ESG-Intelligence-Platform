@@ -1,6 +1,5 @@
 name: Run ESG Model
 
-# Trigger workflow on push to main or manual run
 on:
   push:
     branches: [ main ]
@@ -9,29 +8,28 @@ on:
 jobs:
   run-model:
     runs-on: ubuntu-latest
-
     steps:
-      # 1️⃣ Checkout the repo
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # 2️⃣ Set up Python
       - name: Set up Python 3.11
         uses: actions/setup-python@v4
         with:
           python-version: "3.11"
 
-      # 3️⃣ Install dependencies
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r src/requirements.txt
 
-      # 4️⃣ Run the inference script
+      - name: Download model
+        run: |
+          mkdir -p model
+          wget https://github.com/<USERNAME>/<REPO>/releases/download/<TAG>/esg_total_score_model.keras -O model/esg_total_score_model.keras
+
       - name: Run inference
         run: python src/inference.py
 
-      # 5️⃣ Verify predictions.csv creation
       - name: Verify predictions
         run: |
           if [ -f predictions.csv ]; then
@@ -41,7 +39,6 @@ jobs:
             exit 1
           fi
 
-      # 6️⃣ Upload predictions.csv as artifact
       - name: Upload predictions
         uses: actions/upload-artifact@v4
         with:
