@@ -1,0 +1,27 @@
+# Core Python libraries
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+
+# Optional but common
+jupyter
+notebook
+
+# If you used these in your notebook
+joblib         # for saving/loading models
+xgboost        # only if you used it
+lightgbm       # only if you used it
+tensorflow     # only if you used
+
+
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.5.1
+matplotlib==3.9.1
+seaborn==0.13.2
+joblib==1.4.2
+
+
+pip freeze > requirements.txt
