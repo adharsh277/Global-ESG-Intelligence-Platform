@@ -30,9 +30,10 @@ This project integrates **Azure, AI/ML, and DevOps automation** into a **single 
 
 ---
 
+## Arcitecture Diagram
+
 ## 🏗️ System Architecture  
 
-```mermaid
 flowchart TD
     A[🌐 ESG Data Sources<br>(CSV, Excel, APIs)] -->|Ingest| B[Azure Data Lake]
     B -->|ETL & Transformation| C[Azure Data Factory]
@@ -41,16 +42,123 @@ flowchart TD
     E -->|Predictions & Forecasts| F[Azure Synapse Analytics]
     F -->|KPIs| G[Power BI Dashboards]
 
-    subgraph DevOps Automation
-        H[GitHub Actions]
-        I[Docker Containers]
-        J[Terraform IaC]
-    end
-    
-    H --> I
-    H --> J
-    I --> E
-    J --> B
-    J --> C
-    J --> D
-    J --> E
+## 🚀 Features
+
+✅ Data Ingestion: Collects ESG datasets (carbon, water, energy, social & governance metrics) from CSV, Excel, and API sources into Azure Data Lake.
+✅ Data Processing: Cleans, validates, and transforms messy ESG data using Azure Data Factory (ADF) pipelines.
+✅ Predictive Analytics: Uses Azure ML + TensorFlow to forecast future ESG performance (e.g., carbon reduction trends, renewable adoption rates).
+✅ Governance & Compliance: Tracks KPIs aligned with international ESG frameworks.
+✅ DevOps Integration: Automated CI/CD pipelines with GitHub Actions, Docker, and Terraform.
+✅ Interactive Dashboards: Power BI dashboards for real-time ESG insights and sustainability KPIs.
+
+## 🔄 Workflow
+## 1️⃣ Data Ingestion
+
+Sources: CSV files, Excel sheets, API streams from ESG providers
+
+Stored in Azure Data Lake (Gen2) with hierarchical namespace
+
+Secure and scalable for multi-country ESG datasets
+
+## 2️⃣ ETL Pipelines (Azure Data Factory)
+
+Handle missing values & outliers
+
+Convert units (e.g., metric tons → kilograms)
+
+Standardize time zones, formats, and currency conversions
+
+Store clean, structured data in Azure Synapse
+
+## 3️⃣ Predictive Modeling (Azure ML + TensorFlow)
+
+Train models on historical data
+
+Forecast carbon emissions, water usage, energy demand
+
+Deploy models as containerized APIs with Docker
+
+## 4️⃣ DevOps Automation (CI/CD)
+
+GitHub Actions: Test + deploy pipelines automatically
+
+Docker: Containerization for ML models & ETL scripts
+
+Terraform: Provision infrastructure (Data Lake, Synapse, ML workspace) as code
+
+## 5️⃣ Visualization (Power BI)
+
+ESG KPIs like:
+
+Carbon Reduction %
+
+Renewable Energy Mix
+
+Compliance Scorecards
+
+Real-time dashboards for decision makers
+
+## 📂 Repository Structure
+📦 global-esg-intelligence-platform
+ ┣ 📂 data             # Sample ESG datasets (CSV, Excel)
+ ┣ 📂 notebooks        # ML models (TensorFlow, Python)
+ ┣ 📂 pipelines        # ADF pipeline JSONs
+ ┣ 📂 infra            # Terraform IaC scripts
+ ┣ 📂 docker           # Dockerfiles for ML & ETL
+ ┣ 📂 dashboards       # Power BI reports
+ ┣ 📂 github-actions   # CI/CD workflows
+ ┣ README.md           # Documentation
+
+## 🛠 Tech Stack
+Layer	Technology
+Cloud	Microsoft Azure
+Storage	Azure Data Lake
+ETL	Azure Data Factory
+Analytics	Azure Synapse
+ML/AI	Azure ML + TensorFlow
+Visualization	Power BI
+DevOps	GitHub Actions, Docker, Terraform
+Language	Python
+## 📊 Example Dashboards
+
+Carbon Footprint Tracker
+
+Water Consumption Reduction
+
+Renewable Energy Mix
+
+Governance Risk Score
+
+(Insert Power BI screenshots here)
+
+## 🛣️ Roadmap
+
+ Integrate real-time APIs for ESG streaming data
+
+ Deploy ML models on AKS (Azure Kubernetes Service)
+
+ Add anomaly detection for fraudulent ESG reporting
+
+ Expand coverage to multi-cloud (AWS/GCP)
+
+## 🌐 Real-World Impact
+
+This platform can be applied to:
+
+🌱 Corporates: Track & improve sustainability performance
+
+🏦 Banks/Investors: Assess ESG risks before funding
+
+🏛 Governments: Ensure compliance with Paris Agreement targets
+
+📈 Consultancies: Provide ESG insights to clients
+
+## 📝 License
+
+MIT License © 2025 Global ESG Intelligence Platform Team
+
+
+---
+
+This is **big, enterprise-grade documentation** — polished like a real GitHub project README ⭐.  
+e of
