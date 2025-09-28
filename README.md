@@ -32,7 +32,8 @@ This project integrates **Azure, AI/ML, and DevOps automation** into a **single 
 
 ## Arcitecture Diagram
 
-![Arc Diagram](assets/arcdiagram.png)
+
+![Architecture Diagram](assets/arcdiagram.png)
 
 ## 🏗️ System Architecture  
 
