@@ -1,5 +1,6 @@
-name: Simple CI/CD Demo
+name: CI/CD Demo
 
+# Trigger on push to main or manual run
 on:
   push:
     branches: [ main ]
@@ -10,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout the repo
+      # 1️⃣ Checkout repo
       - name: Checkout repository
         uses: actions/checkout@v3
 
@@ -26,14 +27,15 @@ jobs:
           python -m pip install --upgrade pip
           pip install pandas numpy matplotlib seaborn scikit-learn joblib
 
-      # 4️⃣ Run a simple Python script
-      - name: Run demo script
+      # 4️⃣ Run a simple Python script to create CSV
+      - name: Create demo CSV
         run: |
-          echo "import pandas as pd; import numpy as np; df = pd.DataFrame(np.random.rand(5,3)); df.to_csv('output.csv', index=False)" > demo.py
+          echo "import pandas as pd; import numpy as np; df = pd.DataFrame(np.random.rand(5,3), columns=['A','B','C']); df.to_csv('output.csv', index=False)" > demo.py
           python demo.py
 
-      # 5️⃣ Upload a CSV as artifact
-      - name: Upload output
+      # 5️⃣ Upload CSV as artifact
+      - name: Upload CSV
         uses: actions/upload-artifact@v4
         with:
-          n
+          name: demo-output
+          path: output.csv
