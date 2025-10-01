@@ -111,6 +111,10 @@ DataBricks Diagram
 ![DataBricks Diagram](assets/databricks4.png)
 
 
+## POWERBI VISUALIZATION
+![AI Prediction Diagram](assets/ESG METRICS.png)
+
+
 ## AI Prediction
 ![AI Prediction Diagram](assets/predictnumberr.png)
 ![AI Prediction Diagram](assets/10campanies.png)
