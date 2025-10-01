@@ -112,7 +112,7 @@ DataBricks Diagram
 
 
 ## POWERBI VISUALIZATION
-![AI Prediction Diagram](assets/esgmetrics.png)
+![Power BI](assets/esgmetrics.png)
 
 
 ## AI Prediction
