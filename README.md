@@ -195,6 +195,12 @@ This platform can be applied to:
 
 📈 Consultancies: Provide ESG insights to clients
 
+
+## 👥 Contributors  
+
+- **Adharsh U** – Data Engineering, Azure ML, AI Predictions, DevOps Automation  
+- **Savio Joseph Francis** – Power BI Dashboards, ESG KPI Visualizations, Reporting
+
 ## 📝 License
 
 MIT License © 2025 Global ESG Intelligence Platform Team
