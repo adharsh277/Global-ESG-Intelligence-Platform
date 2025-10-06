@@ -209,4 +209,4 @@ MIT License © 2025 Global ESG Intelligence Platform Team
 ---
 
 This is **big, enterprise-grade documentation** — polished like a real GitHub project README ⭐.  
-e of
+
