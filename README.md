@@ -21,6 +21,7 @@
 
 The **Global ESG Intelligence Platform** is a **cloud-native data & AI ecosystem** designed to empower enterprises, governments, and financial institutions with **real-time Environmental, Social, and Governance (ESG) intelligence**.  
 
+
 🌱 **Why ESG?**  
 ESG performance is critical for long-term sustainability, investor confidence, and regulatory compliance. Organizations worldwide require **scalable, automated platforms** to:  
 - Monitor carbon emissions & renewable energy mix  
