@@ -124,7 +124,6 @@ DataBricks Diagram
 
 
 
-## 🔄 Workflow
 ## 1️⃣ Data Ingestion
 
 Sources: CSV files, Excel sheets, API streams from ESG providers
