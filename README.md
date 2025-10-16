@@ -69,7 +69,7 @@ flowchart TD
     D -->|Input for Modeling| E[Azure ML with TensorFlow]
     E -->|Predictions & Forecasts| F[Azure Synapse Analytics]
     F -->|KPIs| G[Power BI Dashboards]
-
+    
 ## 🚀 Features
 
 ✅ Data Ingestion: Collects ESG datasets (carbon, water, energy, social & governance metrics) from CSV, Excel, and API sources into Azure Data Lake.
