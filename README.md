@@ -27,7 +27,7 @@ ESG performance is critical for long-term sustainability, investor confidence, a
 - Monitor carbon emissions & renewable energy mix  
 - Predict environmental impact and future ESG trends  
 - Track compliance with global standards (GRI, SASB, TCFD)  
-- Enable **data-driven decision-making** for sustainable growth  
+- Enable **data-driven decision-making** for sustainable growth
 
 ⚡ **Key Features & Capabilities**  
 - **Cloud-Native & Scalable:** Built on **Azure** using Data Lake, Databricks, and Azure ML for high-volume data processing.  
