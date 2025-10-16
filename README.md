@@ -40,7 +40,7 @@ ESG performance is critical for long-term sustainability, investor confidence, a
 🌐 **Future Vision**  
 - Integrate **real-time IoT/sensor data** for granular ESG monitoring.  
 - Support **scenario-based forecasting** to guide strategic decision-making.  
-- Enhance predictive AI models with **reinforcement learning and trend simulations**.  
+- Enhance predictive AI models with **reinforcement learning and trend simulations**.
 
 ---
 
