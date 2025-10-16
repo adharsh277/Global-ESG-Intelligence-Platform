@@ -55,7 +55,6 @@ graph TD
     E --> F[Power BI Dashboards]
     C --> G[GitHub Actions CI/CD Pipeline]
 
-
 ## Arcitecture Diagram
 
 
