@@ -1,5 +1,4 @@
 ### Global-ESG-Intelligence-Platform
-
  
 ![Azure](https://img.shields.io/badge/Azure-Cloud-blue?logo=microsoftazure)
 ![Data Lake](https://img.shields.io/badge/Azure%20Data%20Lake-Storage-lightblue?logo=microsoftazure)
