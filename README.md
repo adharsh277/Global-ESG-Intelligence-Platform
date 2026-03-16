@@ -11,6 +11,7 @@
 ![Terraform](https://img.shields.io/badge/Terraform-IaC-purple?logo=terraform)
 ![Docker](https://img.shields.io/badge/Docker-Containerization-blue?logo=docker)
 ![Python](https://img.shields.io/badge/Python-Data%20Science-lightgrey?logo=python)
+
 ---
 
 ## Introduction  
