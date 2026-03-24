@@ -13,6 +13,7 @@
 ![Python](https://img.shields.io/badge/Python-Data%20Science-lightgrey?logo=python)
 ---
 
+
 ## Introduction  
 
 The **Global ESG Intelligence Platform** is a **cloud-native data & AI ecosystem** designed to empower enterprises, governments, and financial institutions with **real-time Environmental, Social, and Governance (ESG) intelligence**.  
